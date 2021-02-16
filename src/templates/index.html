@@ -2,21 +2,21 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title>Your Very Handsome Website</title>
+    <title>Beranda - Bidang Pendidikan Dasar dan Menengah YBWSA</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
+    <meta property="og:title" content="Bidang Pendidikan Dasar dan Menengah YBWSA" />
+    <meta property="og:description" content="Website Resmi Bidang Pendidikan Dasar dan Menengah YBWSA" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
 
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="images/content/favicon.png" />
+    <link rel="apple-touch-icon" href="images/design/favicon.png" />
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="./css/app.minify.css" />
-    <link rel="icon" href="images/content/favicon.png" />
+    <link rel="icon" href="images/design/favicon.png" />
 
     <meta name="theme-color" content="#000" />
   </head>
@@ -24,7 +24,78 @@
   <body>
     <!-- Add your site or application content here -->
 
-    <p>Hello World</p>
+    <!-- START: Header -->
+    <header class="absolute w-full z-50 px-4">
+      <div class="container mx-auto ">
+        <div class="flex flex-strecch items-center">
+          <div class="w-56 flex items-center">
+            <img src="images/design/logo.svg" alt="">
+          </div>
+
+          <div class="w-full"></div>
+          <!-- START: Menu Hamburger -->
+          <div class="w-auto">
+            <ul class="fixed bg-white inset-0 flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex">
+              <li class="mx-3 py-3 md:py-0">
+                <a href="#" class="text-teal-500">Beranda</a>
+              </li>
+              <li class="mx-3 py-3 md:py-0">
+                <a href="#" class="text-gray-500 hover:text-teal-500">Tentang</a>
+              </li>
+              <li class="mx-3 py-3 md:py-0">
+                <a href="#" class="text-gray-500 hover:text-teal-500">Pendidikan</a>
+              </li>
+              <li class="mx-3 py-3 md:py-0">
+                <a href="#" class="text-gray-500 hover:text-teal-500">Galeri</a>
+              </li>
+              <li class="mx-3 py-3 md:py-0">
+                <a href="#" class="text-gray-500 hover:text-teal-500">Kontak</a>
+              </li>
+            </ul>
+          </div>
+          <!-- END: Menu Hamburger -->
+
+          <div class="w-auto">
+            <ul class="flex items-center">
+              <li class="ml-6 block md:hidden">
+                <button id="menu-toggler" class="relative flex z-50 items-center justify-center w-8 h-8 text-gray-500 hover:text-teal-500">
+                  <svg
+                  class="fill-current"
+                  width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.9773 0.362762H1.04219C0.466585 0.362762 0 0.603278 0 0.89999C0 1.1967 0.466668 1.43722 1.04219 1.43722H15.9773C16.5529 1.43722 17.0195 1.1967 17.0195 0.89999C17.0195 0.603235 16.5529 0.362762 15.9773 0.362762Z"/>
+                    <path d="M15.9773 5.64417H1.04219C0.466585 5.64417 0 5.88468 0 6.1814C0 6.47811 0.466668 6.71863 1.04219 6.71863H15.9773C16.5529 6.71863 17.0195 6.47811 17.0195 6.1814C17.0195 5.88464 16.5529 5.64417 15.9773 5.64417Z"/>
+                    <path d="M15.9773 10.9256H1.04219C0.466585 10.9256 0 11.1661 0 11.4628C0 11.7595 0.466668 12 1.04219 12H15.9773C16.5529 12 17.0195 11.7595 17.0195 11.4628C17.0195 11.166 16.5529 10.9256 15.9773 10.9256Z"/>
+                  </svg>
+                </button>
+              </li>
+              <li class="ml-3">
+                <a href="#" class="flex items-center justify-center w-8 h-8 text-gray-500 hover:text-teal-500">
+                  <svg
+                  class="fill-current"
+                  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path d="M8.80758 0C3.95121 0 0 3.95121 0 8.80758C0 13.6642 3.95121 17.6152 8.80758 17.6152C13.6642 17.6152 17.6152 13.6642 17.6152 8.80758C17.6152 3.95121 13.6642 0 8.80758 0ZM8.80758 15.9892C4.8477 15.9892 1.62602 12.7675 1.62602 8.80762C1.62602 4.84773 4.8477 1.62602 8.80758 1.62602C12.7675 1.62602 15.9891 4.8477 15.9891 8.80758C15.9891 12.7675 12.7675 15.9892 8.80758 15.9892Z" />
+                    <path d="M19.7618 18.6122L15.1006 13.951C14.7829 13.6333 14.2686 13.6333 13.951 13.951C13.6333 14.2683 13.6333 14.7832 13.951 15.1006L18.6122 19.7618C18.771 19.9206 18.9789 20 19.187 20C19.3949 20 19.603 19.9206 19.7618 19.7618C20.0794 19.4445 20.0794 18.9295 19.7618 18.6122Z" />
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- END: Header -->
+
+
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

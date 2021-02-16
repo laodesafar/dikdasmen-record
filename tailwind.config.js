@@ -2,7 +2,7 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: {
-    enabled: true,
+    // enabled: true,
     content: ["./**/*.html", "./**/*.js"],
   },
   presets: [],
@@ -29,6 +29,7 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      teal: colors.teal,
     },
     spacing: {
       px: "1px",
