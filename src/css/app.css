@@ -3,3 +3,27 @@
 @tailwind components;
 @tailwind utilities;
 
+
+ .gm-style-iw-d {
+    overflow: hidden !important;
+}
+
+.gm-style .gm-style-iw-c {
+    background-color: rgba(20, 184, 166) ;
+}
+.gm-style .gm-style-iw-t::after {
+    background: linear-gradient(
+45deg
+,rgba(20, 184, 166,1) 50%,rgba(20, 184, 166,0) 51%,rgba(20, 184, 166,0) 100%);
+    box-shadow: -2px 2px 2px 0 rgb(178 178 178 / 40%);
+    content: "";
+    top: -100px;
+    height: 15px;
+    left: 165px;
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(
+-135deg
+);
+    width: 15px;
+}
+
