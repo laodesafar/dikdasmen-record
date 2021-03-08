@@ -418,7 +418,7 @@
       <div class="container mx-auto bg-gray-100 rounded-lg px-4 py-6">
         <h1 class="text-center capitalize text-2xl py-4 font-semibold text-teal-500">Agenda Mendatang</h1>
 
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-3 gap-6 py-6">
           <!-- start card pendidikan -->
           <div class="card flex flex-row ">
             <!--Banner image-->
@@ -430,7 +430,7 @@
           </div>
           <!-- end card pendidikan -->
           <!-- start card pendidikan -->
-          <div class="card flex flex-row h-72 ">
+          <div class="card flex flex-row  ">
             <!--Banner image-->
 
               <div class="w-24 h-24  py-2 bg-teal-500 text-center rounded-lg flex-shrink-0">
@@ -441,7 +441,7 @@
           </div>
           <!-- end card pendidikan -->
           <!-- start card pendidikan -->
-          <div class="card flex flex-row h-72 ">
+          <div class="card flex flex-row  ">
             <!--Banner image-->
 
               <div class="w-24 h-24  py-2 bg-teal-500 text-center rounded-lg flex-shrink-0">
@@ -453,6 +453,12 @@
           <!-- end card pendidikan -->
 
 
+
+        </div>
+        <div class="text-center">
+          <button class="text-base bg-teal-500 py-2 px-6 text-white rounded-sm shadow-lg mt-6 hover:shadow-sm transition-shadow hover:bg-teal-600">
+            Agenda Lainnya
+           </button>
         </div>
       </div>
     </section>
@@ -461,10 +467,41 @@
     <!-- END: Section Agenda -->
 
     <!-- START: MAPS Lokasi -->
-    <section>
-      <div id="map" class="h-96"></div>
+    <section class=" my-16" >
+      <div id="map" class="h-96 py-72"></div>
+      <div class="container relative mx-auto">
+        <div class="absolute  right-0 -top-80 w-3/12 py-6 px-6 bg-gray-100 rounded-md shadow-lg hover:shadow-sm">
+          <h1 class="text-center capitalize text-2xl py-4 font-medium text-teal-500">Hubungi Kami</h1>
+          <form method="#" action="#">
+            <div class="mt-6">
+                <input type="text" placeholder="Nama" class="py-2 px-2 block w-full border-none text-gray-600 bg-white rounded-sm shadow-md hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
+            </div>
+            <div class="mt-6">
+              <input type="email" placeholder="Email" class="py-2 px-2 block w-full border-none text-gray-600 bg-white rounded-sm shadow-md hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
+          </div>
+          <div class="mt-6">
+            <textarea name="pesan" class="py-2 px-2 block w-full border-none text-gray-600 bg-white rounded-sm shadow-md hover:bg-blue-100 focus:bg-blue-100 focus:ring-0" placeholder="Pesan"></textarea>
+        </div>
+        <div class="mt-6">
+          <button class="text-base bg-teal-500 py-2 px-6 text-white rounded-sm shadow-lg  hover:shadow-sm transition-shadow hover:bg-teal-600">
+            Kirim Pesan
+            </button>
+        </div>
+        </form>
+        </div>
+      </div>
     </section>
     <!-- END: MAPS Lokasi -->
+
+    <!-- START: Review Slider -->
+    <section>
+      <div class="container mx-auto">
+        <div class="flex flex-start mt-10 mb-5">
+          <h3 class="text-2xl capitalize font-semibold text-teal-500 ">Kata Mereka Tentang Dikdasmen</h3>
+        </div>
+      </div>
+    </section>
+    <!-- END: Review Slider -->
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
@@ -490,12 +527,43 @@
         // The map, centered at Uluru
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 17,
-          center: dikdasmen,
+          center:{ lat: -6.955240, lng:   110.460295 },
           mapId:'66187302592cb33c'
         });
        const contentString =
-       '<div class="flex flex-cols bg-teal-500 py-4 px-5">'+
-       '<p class="h-40">Jln. Raya Kaligawe KM.4 Gedung M. Sulchan LT.2</p>'+
+       '<div class="grid grid-cols-1 bg-teal-500 py-4 px-5 gap-3">'+
+        '<div class="card flex flex-row ">'+
+        '<div class=" py-2 text-center rounded-lg flex-shrink-0">'+
+        '<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">'+
+        '<path d="M15 13C16.93 13 18.5 11.4295 18.5 9.5C18.5 7.5705 16.93 6 15 6C13.07 6 11.5 7.5705 11.5 9.5C11.5 11.4295 13.07 13 15 13ZM15 7C16.3785 7 17.5 8.1215 17.5 9.5C17.5 10.8785 16.3785 12 15 12C13.6215 12 12.5 10.8785 12.5 9.5C12.5 8.1215 13.6215 7 15 7Z" fill="white" stroke="white"/>'+
+        '<path d="M14.9115 27.3785L22.582 16.3C25.459 12.4645 25.043 6.16 21.6915 2.809C19.8805 0.9975 17.4725 0 14.9115 0C12.3505 0 9.94252 0.9975 8.13152 2.8085C4.78002 6.1595 4.36402 12.464 7.22952 16.2845L14.9115 27.3785ZM8.83852 3.5155C10.461 1.8935 12.6175 1 14.9115 1C17.2055 1 19.362 1.8935 20.9845 3.5155C24.0095 6.54 24.382 12.234 21.771 15.715L14.9115 25.6215L8.04102 15.7C5.44102 12.234 5.81402 6.54 8.83852 3.5155Z" fill="white" stroke="white"/>'+
+        '<path d="M21.0585 21.5034C20.7835 21.4699 20.5355 21.6669 20.5035 21.9414C20.4715 22.2159 20.6675 22.4644 20.9415 22.4964C26.1995 23.1154 29 24.7834 29 25.7499C29 27.1069 23.674 28.9999 15 28.9999C6.326 28.9999 1 27.1069 1 25.7499C1 24.7834 3.8005 23.1154 9.0585 22.4964C9.3325 22.4644 9.5285 22.2154 9.4965 21.9414C9.464 21.6669 9.216 21.4689 8.9415 21.5034C3.677 22.1234 0 23.8694 0 25.7499C0 27.8619 5.1525 29.9999 15 29.9999C24.8475 29.9999 30 27.8619 30 25.7499C30 23.8694 26.323 22.1234 21.0585 21.5034Z" fill="white" stroke="white"/>'+
+        '</svg>'+
+       '</div>'+
+       '<div class="py-2 px-3 text-white font-medium">Jln. Raya Kaligawe<br> KM.4 Gedung M. Sulchan LT.2 <br> Semarang,50112</div>'+
+       '</div>'+
+       '<div class="card flex flex-row ">'+
+        '<div class=" py-2 text-center rounded-lg flex-shrink-0">'+
+        '<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">'+
+        '<path d="M22.0366 19.1933C21.3991 18.8293 20.7381 18.7143 20.176 18.8703C19.754 18.9873 19.41 19.2543 19.1785 19.6434C18.668 20.2539 18.0349 20.9664 17.8824 21.0769C16.6969 21.879 15.7563 21.784 14.7348 20.7624L8.99147 15.0191C7.96892 13.9966 7.87491 13.055 8.67595 11.873C8.78796 11.718 9.50049 11.0854 10.1105 10.5754C10.4995 10.3434 10.7666 9.99988 10.8836 9.57736C11.0391 9.01583 10.9241 8.3553 10.557 7.71177C10.4705 7.56376 8.41244 4.07658 6.51434 3.07303C5.5498 2.56351 4.38674 2.73802 3.6162 3.50906L2.34764 4.77762C-1.35305 8.4788 -0.668015 13.076 4.32873 18.0723L11.6816 25.4256C13.9512 27.6958 16.1503 29.0888 18.2159 29.5664C18.764 29.6929 19.301 29.7564 19.828 29.7564C21.6866 29.7564 23.4127 28.9698 24.9763 27.4062L26.2448 26.1377C27.0154 25.3671 27.1909 24.2026 26.6809 23.2395C25.6768 21.3419 22.1901 19.2828 22.0366 19.1933ZM25.5378 25.4301L24.2692 26.6987C20.9851 29.9829 16.9874 29.3173 12.3886 24.7181L5.03577 17.3647C0.437041 12.7665 -0.229492 8.76932 3.05467 5.48415L4.32324 4.21559C4.60625 3.93258 4.97977 3.78457 5.35829 3.78457C5.5918 3.78457 5.82781 3.84057 6.04632 3.95658C7.6934 4.82812 9.6745 8.18379 9.691 8.21229C9.91551 8.60581 10.001 9.01633 9.91951 9.31035C9.86951 9.49035 9.75801 9.62736 9.5775 9.72837L9.50249 9.78037C9.07597 10.1364 8.06092 10.9974 7.84841 11.3109C7.5424 11.763 7.33939 12.207 7.23288 12.6435C6.87736 11.9345 6.59035 11.1134 6.49584 10.2029C6.46684 9.92838 6.22233 9.73287 5.94632 9.75687C5.6718 9.78587 5.47229 10.0314 5.50029 10.3064C5.86131 13.7831 8.56545 16.0462 8.67995 16.1407C8.69245 16.1512 8.70745 16.1547 8.72046 16.1637L14.0267 21.4699C14.0492 21.4925 14.0722 21.512 14.0947 21.5335C14.1122 21.5595 14.1237 21.588 14.1467 21.611C14.2412 21.7045 16.4988 23.8946 19.9465 24.2526C19.964 24.2541 19.9815 24.2551 19.9985 24.2551C20.2515 24.2551 20.4685 24.0636 20.4955 23.8071C20.524 23.5321 20.324 23.2865 20.0495 23.2575C18.992 23.148 18.0554 22.838 17.2749 22.4785C17.6579 22.3635 18.0474 22.1725 18.4419 21.905C18.7555 21.692 19.6165 20.6779 19.972 20.2514L20.024 20.1759C20.125 19.9964 20.262 19.8844 20.442 19.8339C20.7346 19.7544 21.1461 19.8374 21.5346 20.0589C22.4741 20.6099 25.0713 22.339 25.7953 23.7071C26.0998 24.2801 25.9958 24.9721 25.5378 25.4301Z" fill="white" stroke="white"/>'+
+        '<path d="M13.6817 0.243408C13.4052 0.243408 13.1817 0.466919 13.1817 0.743433C13.1817 1.01995 13.4052 1.24346 13.6817 1.24346C22.1281 1.24346 29 8.1153 29 16.5617C29 16.8382 29.2235 17.0617 29.5 17.0617C29.7765 17.0617 30 16.8382 30 16.5617C30 7.56377 22.6796 0.243408 13.6817 0.243408Z" fill="white" stroke="white"/>'+
+        '<path d="M13.6817 4.75859C20.19 4.75859 25.4843 10.0534 25.4843 16.5612C25.4843 16.8377 25.7078 17.0612 25.9843 17.0612C26.2608 17.0612 26.4843 16.8377 26.4843 16.5612C26.4843 9.50183 20.7411 3.75854 13.6817 3.75854C13.4052 3.75854 13.1817 3.98206 13.1817 4.25857C13.1817 4.53508 13.4052 4.75859 13.6817 4.75859Z" fill="white" stroke="white"/>'+
+        '<path d="M13.6817 8.27373C18.2519 8.27373 21.9696 11.9919 21.9696 16.5616C21.9696 16.8382 22.1931 17.0617 22.4696 17.0617C22.7462 17.0617 22.9697 16.8382 22.9697 16.5616C22.9697 11.4404 18.803 7.27368 13.6817 7.27368C13.4052 7.27368 13.1817 7.49719 13.1817 7.77371C13.1817 8.05022 13.4052 8.27373 13.6817 8.27373Z" fill="white" stroke="white"/>'+
+        '</svg>'+
+
+
+       '</div>'+
+       '<div class="py-2 px-3 text-white font-medium">Telepon<br> 024 - 6583584 PSWT (310)</div>'+
+       '</div>'+
+       '<div class="card flex flex-row ">'+
+        '<div class=" py-2 text-center rounded-lg flex-shrink-0">'+
+        '<svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">'+
+        '<path d="M0 1.25V2.3955V21.6045V22.75H30V21.6045V2.3955V1.25H0ZM18.3125 12.282L15.5895 15.018C15.2585 15.3255 14.7405 15.325 14.4235 15.031L11.687 12.282L11.711 12.2585L1.8235 2.25H28.183L18.2885 12.259L18.3125 12.282ZM10.262 12.2665L1 21.1775V2.9615L10.262 12.2665ZM10.967 12.975L13.7285 15.7495C14.083 16.08 14.538 16.246 14.995 16.246C15.4565 16.246 15.92 16.0765 16.2855 15.736L19.0335 12.975L28.152 21.75H1.843L10.967 12.975ZM19.7385 12.267L29 2.961V21.1775L19.7385 12.267Z" fill="white" stroke="white"/>'+
+        '</svg>'+
+
+       '</div>'+
+       '<div class="py-2 px-3 text-white font-medium">Email<br> ybwsadikdasmen@gmail.com</div>'+
+       '</div>'+
        "</div>";
           const infowindow = new google.maps.InfoWindow({
           content: contentString,
@@ -514,6 +582,3 @@
   </body>
 </html>
 
-<div class="flex flex-cols">
-<p>Jln. Raya Kaligawe KM.4 Gedung M. Sulchan LT.2</p>
-</div>
